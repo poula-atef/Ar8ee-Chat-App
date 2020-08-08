@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.preference.PreferenceManager;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -46,6 +48,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setLogin() {
+        final Context context = this;
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,6 +66,9 @@ public class LoginActivity extends AppCompatActivity {
                             if(task.isSuccessful()){
                                 Intent i = new Intent(LoginActivity.this,InnerActivity.class);
                                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+                                editor.putBoolean("startedToUse",true);
+                                editor.commit();
                                 startActivity(i);
                                 finish();
                             }

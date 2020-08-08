@@ -1,6 +1,7 @@
 package com.example.ar8ee.UI;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -26,9 +27,13 @@ public class MainActivity extends AppCompatActivity {
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
         if(firebaseUser != null){
-            Intent i = new Intent(MainActivity.this,InnerActivity.class);
-            startActivity(i);
-            finish();
+            SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+            boolean go = sharedPreferences.getBoolean("startedToUse",false);
+            if(go){
+                Intent i = new Intent(MainActivity.this,InnerActivity.class);
+                startActivity(i);
+                finish();
+            }
         }
     }
 

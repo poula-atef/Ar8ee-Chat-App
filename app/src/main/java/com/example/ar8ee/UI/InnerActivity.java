@@ -148,6 +148,8 @@ public class InnerActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId() == R.id.logout){
             FirebaseAuth.getInstance().signOut();
+            SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
+            editor.putBoolean("startedToUse",false);
             where = true;
             setStatus("offline");
             startActivity(new Intent(InnerActivity.this,MainActivity.class));
