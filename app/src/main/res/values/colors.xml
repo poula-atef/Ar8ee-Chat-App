@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2672FF</color>
+    <color name="colorPrimaryDark">#194DAC</color>
+    <color name="colorPrimaryLight">#B1CCFF</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bodyColorDark">#000000</color>
+    <color name="bodyColorLight">#fff</color>
+    <color name="barColorDark">#BF000000</color>
+    <color name="hintDarkColor">#66000000</color>
+    <color name="messageColor">#C8C8C8</color>
+    <color name="fabColor">#969696</color>
+    <color name="ChatBackgroundColor">#CDF0FF</color>
+
+</resources>

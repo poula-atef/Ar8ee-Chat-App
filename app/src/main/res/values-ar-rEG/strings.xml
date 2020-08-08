@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أرغي</string>
+    <string name="newAccount_lbl">أول مره اجي هنا</string>
+    <string name="login_lbl">ده انا قديم هنا</string>
+    <string name="username_tb">اسمك ايه بقي؟</string>
+    <string name="email_tb">قولنا ايميلك</string>
+    <string name="password_tb">باسووردك المتين</string>
+    <string name="signup_btn">يلا بينا</string>
+    <string name="go_btn">دخلني !!</string>
+    <string name="forget_your_password">نسيت باسوودك ؟</string>
+    <string name="reset">اخر غلطه</string>
+    <string name="click_reset_and_you_ll_receive_an_email_to_reset_your_password">اول ماهتوعد انها اخر غلطه (تدوس الزرار يعني) هيجيلك ايميل يدخلك صفحتك وخلي بالك بعد كده</string>
+    <string name="search">دورلي</string>
+    <string name="username">اسمك ايه بقي؟</string>
+    <string name="type_a_message">ماتقول حاجه...</string>
+    <string name="seen">خلصانه</string>
+    <string name="reply">رد</string>
+    <string name="logout">خروج</string>
+    <string name="write_something">ارغي ف حاجه...</string>
+    <string name="mark_as_seen">نفض</string>
+    <string name="see_all">see all</string>
+    <string name="comment">comment</string>
+    <string name="like">like</string>
+</resources>

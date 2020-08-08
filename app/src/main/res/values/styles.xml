@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="BlueButtonStyle">
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">348dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="met_textColorHint">@color/colorPrimary</item>
+    </style>
+    <style name="customAppTheme" parent="Theme.AppCompat">
+        <item name="android:textColorPrimaryDisableOnly">#09528C</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+</resources>

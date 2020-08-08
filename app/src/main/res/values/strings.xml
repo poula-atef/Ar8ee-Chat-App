@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Ar8ee</string>
+    <string name="newAccount_lbl">Create New Account</string>
+    <string name="username_tb">UserName</string>
+    <string name="email_tb">Email</string>
+    <string name="password_tb">Password</string>
+    <string name="signup_btn">Sign Up</string>
+    <string name="login_lbl">Log In</string>
+    <string name="go_btn"><![CDATA[GO!!]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="forget_your_password">Forget your password?</string>
+    <string name="reset">Reset</string>
+    <string name="click_reset_and_you_ll_receive_an_email_to_reset_your_password">Click Reset , and you\'ll receive an email to reset your password</string>
+    <string name="search">Search...</string>
+    <string name="username">username</string>
+    <string name="type_a_message">Type a message...</string>
+    <string name="seen">Seen</string>
+    <string name="reply">Reply</string>
+    <string name="mark_as_seen">mark as seen</string>
+    <string name="enjoy_ar8ee_app" translatable="false">☺Enjoy Ar8ee App☺</string>
+    <string name="logout">Logout</string>
+    <string name="write_something">Write Something...</string>
+    <string name="see_all">see all</string>
+    <string name="comment">comment</string>
+    <string name="like">like</string>
+</resources>

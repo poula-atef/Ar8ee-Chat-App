@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rec_element"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@color/colorPrimaryLight"
+                android:layout_marginStart="1dp" />
+            <TextView
+                android:id="@+id/username_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="userName"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp" />
+            <TextView
+            android:id="@+id/post_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/delete_post_btn"
+                android:layout_width="85dp"
+                android:layout_height="130dp"
+                app:lottie_autoPlay="true"
+                android:layout_gravity="center"
+                android:background="@drawable/background"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/trash"
+                tools:layout_editor_absoluteX="152dp"
+                tools:layout_editor_absoluteY="267dp" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/body_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/post_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="hey, this is the body" />
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btns_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+        <Button
+            android:id="@+id/likeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/like"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <Button
+            android:id="@+id/comment_main_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/comment"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/background"
+            android:textColor="@color/colorPrimary"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/comment_area"
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:weightSum="8"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/see_all_btn"
+            android:layout_width="0dp"
+            android:text="@string/see_all"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/background"
+            android:layout_height="50dp"/>
+        <EditText
+            android:id="@+id/comment_et"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/background"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/write_something"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp" />
+
+        <ImageButton
+            android:id="@+id/comment_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:text="@string/see_all"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:src="@drawable/ic_action_name"
+            android:background="@drawable/background"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background"
+        android:id="@+id/comments_area"
+        android:visibility="gone"
+        android:layout_height="100dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comments_rc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
